@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy</title>  
+  <meta property="og:image" content="https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/webp/P.webp"/>
+  <link rel="icon" href="https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/P.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://porishor.com/privacy" />  
+  <meta name="robots" content="noindex">
+  <meta name="robots" content="nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: rgba(255, 255, 255, 0.5);
+      --text-color: #021428;
+      --primary-color: #007bff;    
+    }
+    button {
+    background-color: #007bff; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+    body {
+      margin: 0;
+      font-family: Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #021428;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;      
+      padding: 10px 20px;
+      height: 30px;           
+      background-color: rgba(255, 255, 255, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 140px; /* Adjust the logo size */
+      height: auto;      
+      margin-right: auto;
+    }
+      .fotter-image {
+      width: 140px; /* Adjust the logo size */
+      height: 100; 
+      align: center;
+      margin-right: auto;
+    }
+
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu-toggle img {
+      width: 30px; /* Custom icon size */
+      height: auto;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-menu ul li {
+      margin: 0 15px;
+      padding-top: 10px; 
+    }
+
+    .nav-menu ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      }
+      
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffff;
+      color: #021428;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+    .post-body {
+     text-align: left;
+     padding: 40px 20px;      
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0.5em 0;
+    }
+
+    .hero h1 span {
+      color: #007bff; /* Highlight color */
+    }
+
+    .hero p {
+      font-size: 1.25em;
+      max-width: 600px;
+      margin: 0;
+    }
+
+    footer {
+      background-color: var(--bg-color);
+      backdrop-filter: var(--blur-effect);
+      padding: 10px 20px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        backdrop-filter: var(--blur-effect);
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-menu.active {
+        display: block;
+        transform: translateY(0);
+      }
+
+      .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-menu ul li {
+        margin: 15px 0;
+      }
+     }
+     .hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+ }
+ a {
+color: inherit; /* Makes links the same color as surrounding text */
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+  color: #007bff; /* Keeps color the same on hover */
+  text-decoration: none; /* Ensures no underline on hover */
+ }
+}  
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Custom Logo -->
+    <img src="https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/webp/Porishor.webp" alt="Logo" class="logo">
+    
+    <!-- Custom Menu Toggle Icon -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <img src="https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/png/Menu.png" alt="Open Menu" id="menu-icon">
+    </div>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/business">Business</a></li>
+        <li><a href="/contact">Contact</a></li>
+    <button><a href="/login">Login</a></button></li>
+      </ul>
+    </nav>
+  </header>
+
+</section>
+<div class='post-body' id='post-body'>
+<p><b>1. Information We Collect</b></p><p>When you sign up for an account, we collect:</p><p>• Your name</p><p>• Email address</p><p>• Password</p><p>• Any additional information you provide during sign-up</p><p><br /></p><p><b>2. How We Use Your Information</b></p><p>We use your information to:</p><p>• Create and manage your account</p><p>• Communicate with you about your account and our services</p><p>• Send you updates, promotions, and important notices</p><p><br /></p><p><b>3. Sharing Your Information</b></p><p>We do not sell your personal information. We may share your information with trusted third parties who assist us in operating our services and are bound to keep it confidential.</p><p><br /></p><p><b>4. Data Security</b></p><p>We implement reasonable security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p><p><br /></p><p><b>5. Your Rights</b></p><p>You have the right to access, update, or delete your personal information. You can do this through your account settings or by contacting us directly.</p><p><br /></p><p><b>6. Changes to This Policy</b></p><p>We may update this Privacy Policy. If we make significant changes, we will notify you via email or through our platform. Continued use of your account signifies your acceptance of the updated policy.</p><p><br /></p><p><b>7. Contact Us</b></p><p>If you have questions about our privacy of Service or Privacy Policy, please contact us at <a href="mailto:help@porishor.com">help@porishor.com</a>.</p><p><br /></p><p><p></p></p>
+</div>
+  
+  
+  <!-- Footer -->  
+  <footer>
+      <section class="fotterimg">
+  </div>
+    <img src="https://raw.githubusercontent.com/AbdurRakibTalukder/Porishor/refs/heads/main/webp/Porishor.webp" alt="Porishor" class="fotter-image">      
+</section>
+      <div>
+    <p>Copyright &copy; 2024 Porishor - All Rights Reserved.</p>
+    </div>
+    <div>
+        </div>
+        
+    <a href="terms.html">Terms</a> | 
+  <a href="privacy.html">Privacy</a>
+  </footer>
+</div>
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const navMenu = document.querySelector('.nav-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      navMenu.classList.toggle('active');
+      
+      // Switch between custom icons for open and close
+      if (navMenu.classList.contains('active')) {
+        menuIcon.src = 'https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/png/Cross.png';
+      } else {
+        menuIcon.src = 'https://raw.githubusercontent.com/PorishorLLC/Porishor/refs/heads/main/png/Menu.png';
+      }
+    }
+  </script>
+</body>
+</html>
