@@ -1,5 +1,9 @@
 User-agent: *
-Allow: /index.html
-Disallow: /
+Allow: /
+Disallow: /about
+Disallow: /privacy
+Disallow: /terms
+Disallow: /login
+Disallow: /signup
 
 Sitemap: https://porishor.com/sitemap.xml
